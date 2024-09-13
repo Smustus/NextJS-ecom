@@ -21,7 +21,28 @@ password: admin
 
 ## Getting Started
 
-First, run the development server:
+First, install all dependancies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Second, create a .env file in your root folder and enter your database url, username and password for admin access and stripe keys.
+```bash
+DATABASE_URL="file:./dev.db"
+ADMIN_USERNAME=admin
+ADMIN_HASHED_PASSWORD=x61Ey612Kl2gpFL56FT9weDnpSo4AV8j8+qx2AuTHdRyY036xxzTTrw10Wq3+4qQyB+XURPWx1ONxp3Y3pB37A==
+STRIPE_SECRET_KEY=**********
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=************
+```
+
+Third, run the development server:
 
 ```bash
 npm run dev
